@@ -92,10 +92,10 @@ int main()
             cout << BLUE << "|------------------------------|" << RESET << endl;
 
             View(task, nums);
-            cout << GREAN << "---> Enter the task number (Tasks start from [0] ) <---" << RESET << endl;
+            cout << GREAN << "---> Enter the task number <---" << RESET << endl;
             cout << YELLOW << ":" << RESET;
             cin >> pick;
-            task[pick].Status ="Done";
+            task[pick-1].Status ="Done";
             cout << BLUE << "Congratulations on your completion ( " << task[pick].Title << " )" << RESET << endl;
 
         }
